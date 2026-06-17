@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shani Sambrano | Data Engineering & Data Science Project Portfolio</title>
+  <meta name="description"
+    content="Detailed project portfolio for Shani Sambrano, Freelance Data Engineer, Data Scientist, and AI/ML Solutions Consultant." />
+  <style>
+    :root {
+      --navy: #061626;
+      --deep: #0c2635;
+      --cyan: #14d8f4;
+      --cyan2: #20bce4;
+      --light: #eef7fa;
+      --text: #132536;
+      --muted: #5e6b76;
+      --panel: #ffffff;
+      --soft: #f7fbfc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 0%, rgba(20, 216, 244, .26), transparent 28%),
+        linear-gradient(180deg, #05111f 0, #0b2434 430px, #f7fbfc 430px);
+    }
+
+    a {
+      color: #007c91;
+      font-weight: 700;
+    }
+
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      min-height: 330px;
+      color: white;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 145px;
+      border-radius: 28px;
+      box-shadow: 0 0 32px rgba(20, 216, 244, .45), 0 18px 38px rgba(0, 0, 0, .35);
+    }
+
+    h1 {
+      font-size: 44px;
+      margin: 0 0 8px;
+      letter-spacing: .02em;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #d9f9ff;
+      margin-bottom: 18px;
+    }
+
+    .contact {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .pill {
+      border: 1px solid rgba(20, 216, 244, .55);
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: rgba(255, 255, 255, .07);
+    }
+
+    .hero-video {
+      width: 100%;
+      display: block;
+      border-radius: 24px;
+      margin: 4px 0 22px;
+      box-shadow: 0 20px 55px rgba(7, 26, 45, .24);
+      border: 1px solid rgba(20, 216, 244, .36);
+      background: #071a2d;
+    }
+
+    .panel {
+      background: var(--panel);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 18px 50px rgba(7, 26, 45, .13);
+      margin-bottom: 24px;
+      border-top: 4px solid var(--cyan);
+    }
+
+    h2 {
+      color: var(--navy);
+      margin: 0 0 14px;
+      font-size: 27px;
+    }
+
+    h3 {
+      color: var(--deep);
+      margin: 20px 0 8px;
+      font-size: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      background: #e9f9fc;
+      border: 1px solid #bcecf4;
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 13px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 18px;
+    }
+
+    .project-card {
+      background: #071a2d;
+      color: white;
+      border: 1px solid rgba(20, 216, 244, .45);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(7, 26, 45, .18);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 48px rgba(7, 26, 45, .28);
+      border-color: rgba(20, 216, 244, .9);
+    }
+
+    .project-card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    .project-body {
+      padding: 18px;
+    }
+
+    .project-body h3 {
+      color: white;
+      margin: 0 0 8px;
+      font-size: 19px;
+    }
+
+    .project-body p {
+      color: #d9f9ff;
+      margin: 0 0 14px;
+      font-size: 14px;
+    }
+
+    .cta {
+      color: #061626;
+      background: linear-gradient(90deg, var(--cyan), var(--cyan2));
+      display: inline-block;
+      padding: 8px 11px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--soft);
+      border: 1px solid #d7edf2;
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.55;
+    }
+
+    .links li {
+      margin-bottom: 8px;
+    }
+
+    .footer {
+      color: #d9f9ff;
+      text-align: center;
+      padding: 34px 10px 45px;
+    }
+
+    @media (max-width:920px) {
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width:760px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .logo {
+        margin: 0 auto;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .contact {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <img class="logo" src="assets/Elevate_AI_Solutions_Logo.jpg" alt="Elevate AI Solutions logo" />
+      <div>
+        <h1>Shani Sambrano</h1>
+        <div class="subtitle">Freelance Data Engineer | Data Scientist | AI/ML Solutions Consultant</div>
+        <div class="contact">
+          <span class="pill">Orange County, CA</span>
+          <span class="pill">(714) 884-7662</span>
+          <a class="pill" href="mailto:S.Sambrano@elevate-aisolutions.com">S.Sambrano@elevate-aisolutions.com</a>
+          <a class="pill" href="https://elevate-aisolutions.com" target="_blank"
+            rel="noopener">elevate-aisolutions.com</a>
+        </div>
+      </div>
+    </section>
+
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/Elevate_AI_Solutions_Logo.jpg">
+      <source src="assets/EAIS_animated_logo_zoom_out.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <section class="panel">
+      <h2>Project Portfolio Overview</h2>
+      <p>This landing page expands on the selected projects summarized in my two-page resume. The projects demonstrate
+        applied data engineering, cloud analytics, business intelligence, AI/ML solution planning, and technical
+        documentation developed through my work at Elevate AI Solutions, a division of my freelance company Marinia
+        Group, LLC. I am available for remote part-time or full-time data, cloud, and AI/ML consulting work.
+        Independent contractor engagements are preferred, but I am open to W-2 opportunities when required.</p>
+      <div class="stack">
+        <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">AWS</span><span
+          class="tag">Databricks</span><span class="tag">Apache Spark</span><span class="tag">PySpark</span><span
+          class="tag">Delta Lake</span><span class="tag">Airflow</span><span class="tag">Snowflake</span><span
+          class="tag">Microsoft Fabric</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span
+          class="tag">Machine Learning</span><span class="tag">Data Modeling</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Featured Project Cards</h2>
+      <p>Each card is clickable. The GitHub links open in a new browser tab so hiring managers can review the technical
+        project artifacts.</p>
+      <div class="project-grid">
+        <a class="project-card" href="https://github.com/MariniaGroup/clinic-intake-case-study" target="_blank"
+          rel="noopener">
+          <img src="assets/project-clinic-intake.png" alt="AI-Driven Clinic Intake Optimization project card" />
+          <div class="project-body">
+            <h3>AI-Driven Clinic Intake Optimization</h3>
+            <p>Healthcare workflow modernization case study connecting digital intake, AI-assisted processing, and
+              analytics.</p>
+            <span class="cta">View Project</span>
+          </div>
+        </a>
+        <a class="project-card" href="https://github.com/MariniaGroup/databricks-etl-pipeline" target="_blank"
+          rel="noopener">
+          <img src="assets/project-databricks-etl.png" alt="Databricks ETL Pipeline project card" />
+          <div class="project-body">
+            <h3>Databricks ETL Pipeline</h3>
+            <p>Production-style medallion architecture with PySpark, Delta Lake concepts, AWS S3, and BI-ready outputs.
+            </p>
+            <span class="cta">View on GitHub</span>
+          </div>
+        </a>
+        <a class="project-card" href="https://github.com/MariniaGroup/power-bi-clinic-intake-dashboard
+          " target="_blank" rel="noopener">
+          <img src="assets/project-dashboard.png" alt="Power BI Clinic Intake Analytics Dashboard Project" />
+          <div class="project-body">
+            <h3>Power BI Clinic Intake Analytics Dashboard</h3>
+            <p>Interactive healthcare operations dashboard built from synthetic clinic intake data, with KPI reporting,
+              revenue opportunity tracking, and Power BI cross-filtering.</p>
+            <span class="cta">View Power BI Project</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Selected Data & AI Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Clinic Intake Optimization Case Study</h3>
+          <p>A healthcare workflow modernization concept focused on reducing front-office intake bottlenecks through
+            digital intake, analytics, and AI-supported process design.</p>
+          <ul>
+            <li>Mapped clinic intake pain points into data and workflow requirements.</li>
+            <li>Designed a digital intake modernization workflow for operational improvement.</li>
+            <li>Connected structured intake data to analytics, patient flow visibility, and decision support.</li>
+            <li>Positioned AI and cloud systems as practical tools for reducing manual paperwork and improving
+              administrative efficiency.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Databricks ETL Pipeline Project</h3>
+          <p>A portfolio data engineering project demonstrating ETL pipeline structure, Spark and SQL processing
+            concepts, and lakehouse-oriented data preparation.</p>
+          <ul>
+            <li>Designed a pipeline structure for transforming raw data into analytics-ready datasets.</li>
+            <li>Applied Spark and SQL concepts to support scalable data processing.</li>
+            <li>Demonstrated lakehouse-oriented thinking using modern data platform tools.</li>
+            <li>Organized technical materials and project files through GitHub for portfolio review.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Cloud Analytics & BI Portfolio</h3>
+          <p>Cloud-based analytics and dashboard concepts demonstrating business intelligence, KPI tracking, lead
+            reporting, and operational decision support.</p>
+          <ul>
+            <li>Created analytics concepts for small business, healthcare, and operational modernization use cases.</li>
+            <li>Designed executive dashboard layouts for lead tracking, performance reporting, and business decision
+              support.</li>
+            <li>Applied BI thinking to marketing, client intake, workflow, and financial performance scenarios.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>AI-Supported Workflow Automation Concepts</h3>
+          <p>Business-facing AI workflow concepts that translate operational problems into data requirements, process
+            maps, dashboard needs, and solution designs.</p>
+          <ul>
+            <li>Defined business problems and converted them into data-driven solution concepts.</li>
+            <li>Planned dashboards, analytics outputs, and automation workflows around client-facing operational use
+              cases.</li>
+            <li>Created technical documentation and business case materials for AI/ML solution communication.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Technical Positioning</h2>
+      <p>These projects reflect a freelance and portfolio-based technical pathway in data engineering, data science,
+        AI/ML solution design, and cloud analytics. They are designed to show practical business translation: moving
+        from operational problems to data requirements, analytics workflows, dashboards, and cloud-based implementation
+        concepts.</p>
+      <h3>Target Roles</h3>
+      <p>Data Engineer, Data Scientist, Cloud Data Engineer, Analytics
+        Engineer, BI Developer, Machine Learning Engineer, AI/ML Solutions Consultant, Data Analyst / Data Scientist
+        hybrid roles, and Junior Data Architect.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Links</h2>
+      <ul class="links">
+        <li><a href="https://elevate-aisolutions.com" target="_blank" rel="noopener">Elevate AI Solutions Website</a>
+        </li>
+        <li><a href="https://github.com/MariniaGroup/databricks-etl-pipeline" target="_blank" rel="noopener">GitHub -
+            Databricks ETL Pipeline Project</a></li>
+        <li><a href="https://github.com/MariniaGroup/clinic-intake-case-study" target="_blank" rel="noopener">GitHub -
+            Clinic Intake Case Study</a></li>
+        <li><a href="https://about.me/shani_sambrano/" target="_blank" rel="noopener">Professional Bio</a></li>
+        <li><a href="https://www.youtube.com/@Elevate-AISolutions" target="_blank" rel="noopener">YouTube Channel</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer">Elevate AI Solutions | Data Engineering • Data Science • AI/ML Solutions</div>
+</body>
+
+</html>
