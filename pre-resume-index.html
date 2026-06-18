@@ -259,89 +259,6 @@
         justify-content: center;
       }
     }
-
-
-    .resume-hero {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 22px;
-      align-items: start;
-    }
-
-    .resume-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 14px 0 6px;
-    }
-
-    .resume-button {
-      background: linear-gradient(90deg, var(--cyan), var(--cyan2));
-      color: #061626;
-      text-decoration: none;
-      border-radius: 999px;
-      padding: 10px 14px;
-      font-weight: 800;
-      display: inline-block;
-      box-shadow: 0 8px 20px rgba(20, 216, 244, .18);
-    }
-
-    .resume-columns {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 14px;
-    }
-
-    .resume-chip-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .resume-chip {
-      background: #e9f9fc;
-      border: 1px solid #bcecf4;
-      border-radius: 999px;
-      padding: 7px 10px;
-      font-size: 13px;
-      font-weight: 700;
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 14px;
-    }
-
-    .video-card {
-      border: 1px solid #d7edf2;
-      background: var(--soft);
-      border-radius: 18px;
-      padding: 16px;
-    }
-
-    .video-placeholder {
-      aspect-ratio: 16/9;
-      border-radius: 14px;
-      background: linear-gradient(135deg, #061626, #0c2635 55%, #0e5e73);
-      color: #d9f9ff;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      font-weight: 800;
-      margin-bottom: 12px;
-      border: 1px solid rgba(20, 216, 244, .45);
-    }
-
-    @media (max-width:920px) {
-      .resume-hero, .resume-columns, .video-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
   </style>
 </head>
 
@@ -383,85 +300,6 @@
       </div>
     </section>
 
-
-
-    <section class="panel" id="resume">
-      <h2>Online Resume</h2>
-      <div class="resume-hero">
-        <div>
-          <h3>Shani Sambrano</h3>
-          <p><strong>Cloud Data Architect | Data Scientist | ML Systems Engineer</strong></p>
-          <p>Cloud data, analytics, BI, and AI/ML solutions professional focused on building portfolio-based technical systems through Marinia Group, LLC and Elevate AI Solutions. My work demonstrates data engineering, Power BI reporting, Databricks ETL concepts, AWS-hosted assets, technical documentation, and business-facing AI solution planning.</p>
-          <div class="resume-actions">
-            <a class="resume-button" href="assets/Shani_Sambrano_Data_AI_Resume_Elevate_Stationery.pdf" target="_blank" rel="noopener">View Resume PDF</a>
-            <a class="resume-button" href="assets/Shani_Sambrano_Data_AI_Resume_Elevate_Stationery.docx" target="_blank" rel="noopener">Download Resume DOCX</a>
-            <a class="resume-button" href="mailto:S.Sambrano@elevate-aisolutions.com">Email Me</a>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Availability</h3>
-          <p>Remote part-time or full-time data, cloud, and AI/ML consulting work. Independent contractor engagements are preferred, but I am open to W-2 opportunities when required.</p>
-          <p><strong>Location:</strong> Orange County, CA<br><strong>Email:</strong> S.Sambrano@elevate-aisolutions.com<br><strong>Website:</strong> elevate-aisolutions.com</p>
-        </div>
-      </div>
-      <div class="resume-columns">
-        <article class="card">
-          <h3>Core Architecture Capabilities</h3>
-          <ul>
-            <li>Cloud data architecture and analytics-ready data preparation</li>
-            <li>Data pipeline architecture, ETL/ELT, CDC concepts, and batch processing</li>
-            <li>Lakehouse and warehouse design using AWS, Databricks, Snowflake, and Fabric</li>
-            <li>BI dashboards, KPI reporting, semantic model thinking, and executive analytics</li>
-            <li>Machine learning use-case design, predictive analytics, and model evaluation</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Professional Experience</h3>
-          <p><strong>Marinia Group, LLC / Elevate AI Solutions</strong><br>Cloud Data Architect, Data Scientist &amp; AI/ML Solutions Consultant | 2024 - Present</p>
-          <ul>
-            <li>Designed cloud-based data engineering, analytics, and AI/ML portfolio solutions.</li>
-            <li>Built Power BI reporting artifacts from synthetic clinic intake data.</li>
-            <li>Created Databricks ETL project materials using medallion architecture concepts.</li>
-            <li>Developed AWS S3-hosted project assets and static portfolio pages.</li>
-          </ul>
-        </article>
-      </div>
-      <div class="resume-columns">
-        <article class="card">
-          <h3>Technology Stack</h3>
-          <div class="resume-chip-list">
-            <span class="resume-chip">Python</span><span class="resume-chip">SQL</span><span class="resume-chip">AWS</span><span class="resume-chip">Databricks</span><span class="resume-chip">Spark</span><span class="resume-chip">PySpark</span><span class="resume-chip">Delta Lake</span><span class="resume-chip">Airflow</span><span class="resume-chip">Snowflake</span><span class="resume-chip">Microsoft Fabric</span><span class="resume-chip">Power BI</span><span class="resume-chip">Tableau</span>
-          </div>
-        </article>
-        <article class="card">
-          <h3>Education</h3>
-          <p><strong>M.S. Data Science</strong> — Eastern University<br><strong>MBA, Finance Concentration</strong> — University of La Verne (In Progress)<br><strong>B.A. Communication Arts &amp; Media</strong> — Loyola Marymount University</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="panel" id="videos">
-      <h2>Videos & Introductions</h2>
-      <p>This section is ready for my professional introduction, YouTube posts, dashboard walkthroughs, and project explainers.</p>
-      <div class="video-grid">
-        <article class="video-card">
-          <div class="video-placeholder">Introduction Video<br><span style="font-size:13px; font-weight:500;">Coming Soon</span></div>
-          <h3>Professional Introduction</h3>
-          <p>A short introduction video for recruiters and hiring managers.</p>
-        </article>
-        <article class="video-card">
-          <div class="video-placeholder">Project Walkthrough<br><span style="font-size:13px; font-weight:500;">Coming Soon</span></div>
-          <h3>Data/AI Portfolio Walkthrough</h3>
-          <p>A narrated walkthrough of the Power BI, Databricks, AWS, and clinic intake projects.</p>
-        </article>
-        <article class="video-card">
-          <div class="video-placeholder">YouTube Posts<br><span style="font-size:13px; font-weight:500;">Coming Soon</span></div>
-          <h3>Elevate AI Solutions Channel</h3>
-          <p>Selected YouTube posts and professional thought-leadership videos.</p>
-        </article>
-      </div>
-    </section>
-
     <section class="panel">
       <h2>Featured Project Cards</h2>
       <p>Each card is clickable. The GitHub links open in a new browser tab so hiring managers can review the technical
@@ -487,7 +325,8 @@
             <span class="cta">View on GitHub</span>
           </div>
         </a>
-        <a class="project-card" href="https://github.com/MariniaGroup/power-bi-clinic-intake-dashboard" target="_blank" rel="noopener">
+        <a class="project-card" href="https://github.com/MariniaGroup/power-bi-clinic-intake-dashboard
+          " target="_blank" rel="noopener">
           <img src="assets/project-dashboard.png" alt="Power BI Clinic Intake Analytics Dashboard Project" />
           <div class="project-body">
             <h3>Power BI Clinic Intake Analytics Dashboard</h3>
@@ -559,7 +398,7 @@
       <h3>Target Roles</h3>
       <p>Data Engineer, Data Scientist, Cloud Data Engineer, Analytics
         Engineer, BI Developer, Machine Learning Engineer, AI/ML Solutions Consultant, Data Analyst / Data Scientist
-        hybrid roles, and Data Architect roles.</p>
+        hybrid roles, and Junior Data Architect.</p>
     </section>
 
     <section class="panel">
